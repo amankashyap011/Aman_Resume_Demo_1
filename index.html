@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<!--
+    DOCTYPE tells the browser that we are using HTML5.
+-->
+
+<html lang="en">
+
+<head>
+
+    <!--
+        This tells the browser to use UTF-8 character encoding.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        This makes the webpage work properly on different screen sizes.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        This is the title displayed on the browser tab.
+    -->
+    <title>Aman</title>
+
+    <!--
+        We are connecting our HTML file with a separate CSS file.
+
+        IMPORTANT:
+        All styling will be written in style.css,
+        NOT inside this HTML file.
+    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE TITLE
+         =====================================================
+
+         This is the main heading of the webpage.
+    -->
+
+    <h1>Aman</h1>
+
+
+
+    <!-- =====================================================
+         TOP NAVIGATION
+         =====================================================
+
+         These links are similar to the
+         "Article | Talk" section in Wikipedia.
+    -->
+
+    <div class="top-navigation">
+
+        <!-- Left side links -->
+
+        <div>
+
+            <a href="#">Article</a>
+
+            <a href="#">Talk</a>
+
+        </div>
+
+
+        <!-- Right side links -->
+
+        <div>
+
+            <a href="#">Read</a>
+
+            <a href="#">View source</a>
+
+            <a href="#">View history</a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SMALL INTRODUCTION
+         =====================================================
+
+         This is similar to:
+
+         "From Wikipedia, the free encyclopedia"
+    -->
+
+    <p>
+        From Wikipedia, the free encyclopedia
+    </p>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT AREA
+         =====================================================
+
+         We are using <main> because this contains
+         the main content of our webpage.
+    -->
+
+    <main>
+
+
+        <!-- =================================================
+             ARTICLE CONTENT
+             =================================================
+
+             <article> contains the main written information.
+        -->
+
+        <article>
+
+
+            <!-- =============================================
+                 INTRODUCTION
+                 ============================================= -->
+
+            <p>
+
+                <strong>Aman</strong> is a student interested in
+                <a href="#">programming</a>,
+                <a href="#">web development</a>,
+                <a href="#">data science</a> and
+                <a href="#">artificial intelligence</a>.
+
+            </p>
+
+
+            <p>
+
+                He is currently learning HTML, CSS, JavaScript
+                and Python while developing his programming
+                and computer science skills.
+
+            </p>
+
+
+            <p>
+
+                His interests include software development,
+                artificial intelligence, machine learning
+                and computer science.
+
+            </p>
+
+
+
+            <!-- =============================================
+                 EARLY LIFE AND EDUCATION
+                 ============================================= -->
+
+            <section>
+
+                <!--
+                    h2 is used for a major section heading.
+                -->
+
+                <h2>Early life and education</h2>
+
+
+                <p>
+
+                    Aman is currently pursuing his education
+                    and developing his skills in programming
+                    and computer science.
+
+                </p>
+
+
+                <p>
+
+                    His studies include mathematics, statistics,
+                    programming, data science and computational
+                    thinking.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 SKILLS
+                 ============================================= -->
+
+            <section id="skills">
+
+                <h2>Skills</h2>
+
+
+                <!--
+                    <ul> creates an unordered list.
+                    The browser displays bullet points.
+                -->
+
+                <ul>
+
+                    <li>HTML</li>
+
+                    <li>CSS</li>
+
+                    <li>JavaScript</li>
+
+                    <li>Python</li>
+
+                    <li>Git and GitHub</li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 GOALS
+                 ============================================= -->
+
+            <section id="goals">
+
+                <h2>Goals</h2>
+
+
+                <!--
+                    <ol> creates an ordered list.
+                    The browser displays numbers.
+                -->
+
+                <ol>
+
+                    <li>Learn HTML</li>
+
+                    <li>Learn CSS</li>
+
+                    <li>Learn JavaScript</li>
+
+                    <li>Learn Python</li>
+
+                    <li>Build websites</li>
+
+                </ol>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 CONTACT
+                 ============================================= -->
+
+            <section id="contact">
+
+                <h2>Contact</h2>
+
+
+                <p>
+
+                    Email:
+
+                    <!--
+                        mailto opens the user's email application.
+                    -->
+
+                    <a href="mailto:example@email.com">
+                        example@email.com
+                    </a>
+
+                </p>
+
+            </section>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             RIGHT SIDE INFORMATION BOX
+             =================================================
+
+             <aside> is used for additional information
+             related to the main article.
+
+             This is the box where your photograph will appear.
+        -->
+
+        <aside>
+
+
+            <!--
+                Name displayed at the top of the information box.
+            -->
+
+            <h2>Aman</h2>
+
+
+            <!--
+                YOUR PHOTO
+
+                The image file must be in the same folder
+                as index.html.
+
+                File name:
+                AMAN_passport_size_photo.jpeg
+            -->
+
+            <img
+                src="AMAN_passport_size_photo.jpeg"
+                alt="Photograph of Aman"
+            >
+
+
+            <!--
+                Caption displayed below the photograph.
+            -->
+
+            <p>
+                Aman
+            </p>
+
+
+
+            <!-- =============================================
+                 PERSONAL INFORMATION TABLE
+                 =============================================
+
+                 <table> is used to display information
+                 in rows and columns.
+            -->
+
+            <table>
+
+
+                <!-- First row -->
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <td>Aman</td>
+
+                </tr>
+
+
+                <!-- Second row -->
+
+                <tr>
+
+                    <th>Occupation</th>
+
+                    <td>Student</td>
+
+                </tr>
+
+
+                <!-- Third row -->
+
+                <tr>
+
+                    <th>Interests</th>
+
+                    <td>
+                        Programming, Web Development, AI
+                    </td>
+
+                </tr>
+
+
+                <!-- Fourth row -->
+
+                <tr>
+
+                    <th>Skills</th>
+
+                    <td>
+                        HTML, Python, Git
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+
+        </aside>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         BOTTOM NAVIGATION
+         =====================================================
+
+         You specifically asked for your navigation links
+         at the bottom of the webpage.
+    -->
+
+    <nav class="bottom-navigation">
+
+
+        <!--
+            This is a label for our navigation links.
+        -->
+
+        <strong>Navigation:</strong>
+
+
+        <!--
+            These links move the user to different sections.
+        -->
+
+        <a href="#">Home</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#goals">Goals</a>
+
+        <a href="#contact">Contact</a>
+
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         =====================================================
+
+         Footer normally contains information about
+         the webpage or copyright information.
+    -->
+
+    <footer>
+
+        <p>
+            This page was created for HTML and GitHub practice.
+        </p>
+
+        <p>
+            &copy; 2026 Aman
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
