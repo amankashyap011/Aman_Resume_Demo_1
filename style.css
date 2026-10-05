@@ -1,0 +1,486 @@
+/* =========================================================
+   BASIC PAGE STYLING
+   ========================================================= */
+
+/*
+   body represents the complete visible webpage.
+
+   We remove the default margin and add a small
+   amount of space around the webpage.
+*/
+
+body {
+
+    margin: 0;
+
+    padding: 0 8px;
+
+    /*
+       Arial is used for normal text,
+       similar to the Wikipedia screenshot.
+    */
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #202122;
+
+    background-color: white;
+
+}
+
+
+
+/* =========================================================
+   MAIN PAGE TITLE
+   ========================================================= */
+
+/*
+   The Wikipedia screenshot uses a serif font
+   for the main article title.
+
+   Georgia is a commonly available serif font.
+*/
+
+h1 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* =========================================================
+   TOP NAVIGATION
+   ========================================================= */
+
+/*
+   This creates the horizontal line and spacing
+   around Article, Talk, Read, View source etc.
+*/
+
+.top-navigation {
+
+    display: flex;
+
+    /*
+       Put the left group on the left
+       and the right group on the right.
+    */
+
+    justify-content: space-between;
+
+    border-top: 1px solid #a2a9b1;
+
+    border-bottom: 1px solid #a2a9b1;
+
+    padding: 6px 0;
+
+}
+
+
+
+/*
+   Add space between the navigation links.
+*/
+
+.top-navigation a {
+
+    margin-right: 18px;
+
+}
+
+
+
+/* =========================================================
+   ALL LINKS
+   ========================================================= */
+
+/*
+   Wikipedia uses blue links.
+
+   #0645ad is a commonly used Wikipedia-style blue.
+*/
+
+a {
+
+    color: #0645ad;
+
+    text-decoration: none;
+
+}
+
+
+
+/*
+   When the mouse moves over a link,
+   underline the link.
+*/
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =========================================================
+   MAIN CONTENT AREA
+   ========================================================= */
+
+/*
+   <main> contains two major parts:
+
+   1. Article
+   2. Information box
+
+   Flexbox places them next to each other.
+*/
+
+main {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+}
+
+
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+/*
+   The article takes most of the available width.
+*/
+
+article {
+
+    flex: 1;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+/*
+   The screenshot uses serif fonts for article
+   section headings.
+*/
+
+h2 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    font-weight: normal;
+
+    /*
+       This creates the horizontal line
+       underneath headings.
+    */
+
+    border-bottom: 1px solid #a2a9b1;
+
+    padding-bottom: 4px;
+
+    margin-top: 25px;
+
+}
+
+
+
+/* =========================================================
+   RIGHT-SIDE INFORMATION BOX
+   ========================================================= */
+
+/*
+   This creates the box on the right side,
+   similar to the Wikipedia infobox.
+*/
+
+aside {
+
+    width: 280px;
+
+    /*
+       Prevent the box from becoming smaller
+       than the specified width.
+    */
+
+    flex-shrink: 0;
+
+    border: 1px solid #a2a9b1;
+
+    background-color: #f8f9fa;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* =========================================================
+   INFORMATION BOX TITLE
+   ========================================================= */
+
+/*
+   The name at the top of the box.
+*/
+
+aside h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    border: none;
+
+    margin: 0;
+
+    padding: 7px;
+
+    background-color: #eaecf0;
+
+}
+
+
+
+/* =========================================================
+   YOUR PHOTOGRAPH
+   ========================================================= */
+
+/*
+   Make the photograph fit the width
+   of the information box.
+*/
+
+aside img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+/* =========================================================
+   PHOTO CAPTION
+   ========================================================= */
+
+aside > p {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    margin: 5px 0 10px 0;
+
+}
+
+
+
+/* =========================================================
+   INFORMATION TABLE
+   ========================================================= */
+
+/*
+   Make the table use the complete width
+   of the information box.
+*/
+
+table {
+
+    width: 100%;
+
+    /*
+       Removes extra gaps between table borders.
+    */
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+}
+
+
+
+/*
+   Add borders and spacing to table cells.
+*/
+
+th,
+td {
+
+    border-top: 1px solid #a2a9b1;
+
+    padding: 6px;
+
+    text-align: left;
+
+    vertical-align: top;
+
+}
+
+
+
+/*
+   The first column contains labels,
+   so give it a light gray background.
+*/
+
+th {
+
+    background-color: #eaecf0;
+
+}
+
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+/*
+   Give lists comfortable line spacing.
+*/
+
+ul,
+ol {
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================================
+   BOTTOM NAVIGATION
+   ========================================================= */
+
+/*
+   This is the navigation you asked to move
+   to the bottom of the webpage.
+*/
+
+.bottom-navigation {
+
+    border-top: 1px solid #a2a9b1;
+
+    border-bottom: 1px solid #a2a9b1;
+
+    margin-top: 35px;
+
+    padding: 12px 5px;
+
+}
+
+
+
+/*
+   Add space between navigation links.
+*/
+
+.bottom-navigation a {
+
+    margin-left: 25px;
+
+}
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+/*
+   Footer text is smaller and gray,
+   similar to the bottom of Wikipedia pages.
+*/
+
+footer {
+
+    color: #54595d;
+
+    font-size: 13px;
+
+    padding: 20px 5px;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/*
+   When the screen becomes small, such as a phone,
+   the article and photo box should no longer stay
+   side-by-side.
+
+   They will become one below the other.
+*/
+
+@media (max-width: 700px) {
+
+
+    main {
+
+        display: block;
+
+    }
+
+
+    /*
+       Make the information box use the available width.
+    */
+
+    aside {
+
+        width: 100%;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    /*
+       Put the top navigation items
+       one below another on small screens.
+    */
+
+    .top-navigation {
+
+        display: block;
+
+    }
+
+
+}
